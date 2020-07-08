@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <div class="head">
+      <form action="">
+        <label id="lab"> </label>
+
+        <input
+          type="text"
+          onkeyup=""
+          id="input"
+          placeholder="search for episode..."
+        />
+      </form>
+      <label>Select an episode</label>
+      <select id="select" onchange="showUphtheSelectionResult()">
+        <option value="0">All</option>
+      </select>
+    </div>
     <div id="root"></div>
 
     <!-- Loads a provided function called getAllE..pisodes() which returns all episodes -->
