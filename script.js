@@ -1,9 +1,14 @@
 //You can edit ALL of the code here
-function setup() {
-  const allEpisodes = getAllEpisodes();
+fetch("https://api.tvmaze.com/shows/82/episodes")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    setup(data);
+  });
+function setup(thData) {
+  const allEpisodes = thData;
   makePageForEpisodes(allEpisodes);
-  // searchLive(allEpisodes);
-  // selectEpisodeMenu(allEpisodes);
 }
 
 function makePageForEpisodes(episodeList) {
@@ -93,8 +98,9 @@ function selectEpisodeMenu(theEpisodes) {
 }
 
 function showUphtheSelectionResult() {
-  var allEpis = document.getElementById("TheMainDiv").children;
-  var theEpDivsArray = Array.from(allEpis);
+  var theEpis = document.querySelectorAll("div .EpDivs");
+
+  var theEpDivsArray = Array.from(theEpis);
 
   var theSelectedEpisode = document.getElementById("select").value;
   theEpDivsArray.forEach(function (oneEpisode) {
