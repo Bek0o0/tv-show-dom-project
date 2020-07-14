@@ -1,41 +1,70 @@
+body {
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 #root {
-  color: red;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .EpDivs {
   max-width: 250px;
   margin: 2em;
-  color: cornsilk;
-  background-color: brown;
+  color: white;
+  background-color: black;
 }
 #TheMainDiv {
   display: flex;
   flex-wrap: wrap;
 }
 .H2 {
-  background-color: cornsilk;
+  background-color: white;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
   text-align: center;
 }
 
-.head {
-  background-color: brown;
-  border: cornsilk;
-  border-style: inset;
-  height: 6em;
-  width: 100%;
-  color: #ddd;
-}
-#input {
-  margin: 0.5em;
-  width: 20em;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-}
 #select {
   position: relative;
   font-family: Arial;
   padding: 0.1em;
+  margin-left: 1em;
+}
+
+.TheAllShowsDiv {
+  display: flex;
+  flex-grow: inherit;
+  width: 100%;
+  max-height: max-content;
+  margin: 2em;
+  color: white;
+  background-color: black;
+  border-style: none;
+}
+.NameImgSumDiv {
+  color: white;
+  height: max-content;
+  width: 65em;
+}
+.OtherStuffDiv {
+  align-self: center;
+  color: white;
+  border: white;
+  border-style: dotted;
+  height: 150px;
+  width: 400px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.TheAllShowsDiv:hover {
+  border-style: solid;
+}
+#selectShow {
+  position: relative;
+  font-family: Arial;
+  padding: 0.1em;
+  margin-left: 1em;
 }

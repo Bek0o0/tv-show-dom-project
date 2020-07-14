@@ -6,29 +6,88 @@
     <title>TV Show Project | Abobaker (Bek0o0)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div class="head">
-      <form action="">
-        <label id="lab"> </label>
-
-        <input
-          type="text"
-          onkeyup=""
-          id="input"
-          placeholder="search for episode..."
-        />
-      </form>
-      <label>Select an episode</label>
-      <select id="select" onchange="showUphtheSelectionResult()">
-        <option value="0">All</option>
-      </select>
+    <div class="card bg-dark text-white">
+      <img src="header.jpg" class="card-img" alt="..." style="height: 170px;" />
+      <div class="card-img-overlay">
+        <h1 class="card-title">TV Show Project</h1>
+        <br /><br /><br />
+        <p class="card-text">
+          <marquee>
+            This project has been made by student "Abobaker MohamedAli", it's
+            fetching all the shows and episodes data from an api.
+          </marquee>
+        </p>
+      </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <button class="btn my-2 my-sm-1 bg-dark text-white">
+            Back to the shows
+          </button>
+
+          <input
+            onkeyup=""
+            placeholder="search..."
+            class="input form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <label id="lab"> display: 0/0 </label>
+
+          <select id="selectShow" onchange="getTheShowEpis()">
+            <option>Select a show ...</option>
+          </select>
+
+          <select id="select" onchange="showUphtheSelectionResult()">
+            <option value="0">All the episodes</option>
+          </select>
+        </form>
+      </div>
+    </nav>
+
     <div id="root"></div>
 
     <!---Loads a provided function called getAllE..pisodes() which returns all episodes -->
     <script src="episodes.js"></script>
+    <script src="shows.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
