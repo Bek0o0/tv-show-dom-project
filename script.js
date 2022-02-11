@@ -1,4 +1,3 @@
-//You can edit ALL of the code here
 
 function setup() {
   const allshows = getAllShows();

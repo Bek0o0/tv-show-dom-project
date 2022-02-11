@@ -7,7 +7,7 @@ body {
 #root {
   display: flex;
   flex-wrap: wrap;
-}
+} 
 
 .EpDivs {
   max-width: 250px;
