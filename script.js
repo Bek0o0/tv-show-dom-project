@@ -164,8 +164,8 @@ function theMainPageWithShows(allTheShows) {
     var showName = document.createElement("h2");
     showName.innerHTML = oneShow.name;
     showName.className = "H2";
-    var showImg = document.createElement("img");
-    showImg.src = oneShow.image;
+    // var showImg = document.createElement("img");
+    // showImg.src = oneShow.image;
     var showSummary = document.createElement("p");
     showSummary.innerHTML = oneShow.summary;
 
